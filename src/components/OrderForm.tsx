@@ -138,7 +138,7 @@ const OrderForm: React.FC = () => {
   if (!validateForm()) return;
 
   const form = event.target as HTMLFormElement;
-  form.submit();
+  
 
   // إعادة ضبط البيانات بعد الإرسال
   setFormData({
@@ -154,6 +154,7 @@ const OrderForm: React.FC = () => {
   });
 
   setShowSuccess(true);
+    form.submit();
 };
 
 
